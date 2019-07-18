@@ -1,6 +1,6 @@
 {
-  "name": "finansys",
-  "version": "0.0.0",
+  "name": "advisor-portal",
+  "version": "1.2.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
