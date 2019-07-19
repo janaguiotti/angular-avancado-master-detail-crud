@@ -5,21 +5,59 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
-        <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/customer">Clientes</a>
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/dashboards">Dashboards</a>
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/products">Produtos</a>
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/portability">Portabilidade</a>
-        </li>
-        <li class="nav-item" routerLinkActive="active">
-            <a class="nav-link" routerLink="/platform">Plataforma</a>
-        </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="clientDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Clientes
+                </a>
+                <div class="dropdown-menu" aria-labelledby="clientDropdown">
+                    <a class="dropdown-item" routerLink="/customer">Carteira</a>
+                    <a class="dropdown-item" routerLink="/customer/register">Cadastro Cliente</a>
+                    <a class="dropdown-item" routerLink="/customer/maturity">Vencimento</a>
+                    <a class="dropdown-item" routerLink="/customer/rescues">Resgates</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dashboardsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dashboards
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dashboardsDropdown">
+                    <a class="dropdown-item" routerLink="/dashboards">Índices</a>
+                    <a class="dropdown-item" routerLink="/dashboards/registration-management">Gestão de cadastro</a>
+                    <a class="dropdown-item" routerLink="/dashboards/portability-management">Gestão de portabilidade</a>
+                    <a class="dropdown-item" routerLink="/dashboards/consolidated-position">Posição consolidade e aderência</a>
+                </div>
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                    <a class="nav-link" routerLink="/products">Produtos</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="portabilidadeDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Portabilidade
+                </a>
+                <div class="dropdown-menu" aria-labelledby="portabilidadeDropdown">
+                    <a class="dropdown-item" routerLink="/portability">Banco do Brasil</a>
+                    <a class="dropdown-item" routerLink="/portability/itau">Itau</a>
+                    <a class="dropdown-item" routerLink="/portability/genial">Genial</a>
+                    <a class="dropdown-item" routerLink="/portability/xp">XP</a>
+                    <a class="dropdown-item" routerLink="/portability/btg">BTG</a>
+                    <a class="dropdown-item" routerLink="/portability/guide">Guide</a>
+                    <a class="dropdown-item" routerLink="/portability/santander">Santander</a>
+                    <a class="dropdown-item" routerLink="/portability/bradesco">Bradesco</a>
+                </div>
+            </li>
+        
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="plataformaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Plataforma
+                </a>
+                <div class="dropdown-menu" aria-labelledby="plataformaDropdown">
+                    <a class="dropdown-item" routerLink="/platform">Escritório</a>
+                    <a class="dropdown-item" routerLink="/platform/branch">Filial</a>
+                    <a class="dropdown-item" routerLink="/platform/manager">Gestor</a>
+                    <a class="dropdown-item" routerLink="/platform/advisor">Assessor</a>
+                    <a class="dropdown-item" routerLink="/platform/customer">Cliente</a>
+                </div>
+            </li>
         </ul>
     </div>
 </nav> 
